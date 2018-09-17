@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:background="@color/tan_background"
+    android:id="@+id/list_item">
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:src="@mipmap/ic_launcher"
+        style="@style/ImageList"/>
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/item_icon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/default_name"
+            style="@style/FontDefault"/>
+
+        <TextView
+            android:id="@+id/miwok_name"
+            style="@style/FontMiwak" />
+    </LinearLayout>
+
+    <FrameLayout
+        style="@style/imagePlay">
+        <ImageView
+            android:id="@+id/img_play"
+            android:src="@drawable/ic_play_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"/>
+    </FrameLayout>
+</RelativeLayout>
